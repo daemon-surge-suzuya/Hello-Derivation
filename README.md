@@ -12,7 +12,7 @@ To use this Nix derivation, follow these steps:
 `cd Hello-Derivation`
 3. Enter a Nix shell to activate the environment with the provided packages:
 `nix-shell`
-4. Use the `lol-test` command to apply the `lolcat` package to a text input. For example:
-`lol-test "Hello World"`
+4. Use the `lol-say` command to apply the `lolcat` package to a text input. For example:
+`lol-say "Hello World"`
 
 This will display the "Hello World" message with colorful output, courtesy of lolcat.
