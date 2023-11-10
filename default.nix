@@ -1,12 +1,12 @@
 with import <nixpkgs> {};
 
 let
-  simplePackage = pkgs.writeShellScriptBin "lol-say" ''
+  simplePackage = pkgs.writeShellScriptBin "lolsay" ''
   nix-shell -p lolcat --run "echo $1 | lolcat"
   '';
 in
 stdenv.mkDerivation rec {
-  name = "Simple-Derivation";
+  name = "Hello-Derivation";
 
   buildInputs = [ simplePackage ];
 }
